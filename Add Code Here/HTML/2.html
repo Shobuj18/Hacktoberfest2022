@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent1{
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            border: 1px black solid;
+            padding: .5rem;
+            justify-content: flex-start;
+            border-bottom: 0px;
+
+        }
+        .parent2{
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            border: 1px black solid;
+            padding: .5rem;
+            justify-content: flex-end;
+            border-top: 0px;
+        }
+        .child{
+            flex-basis: 25%;
+            padding: .5rem;
+        }
+        .data{
+            background-color: grey;
+            height: 100px;
+            width: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+    </style>
+    <title>Practice</title>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child">
+            <div class="data"></div>
+        </div>
+    </div>
+    <div class="parent2">
+        <div class="child">
+            <div class="data"></div>
+    </div>
+</body>
+</html>
